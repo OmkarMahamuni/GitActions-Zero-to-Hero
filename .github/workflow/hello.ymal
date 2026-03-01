@@ -1,0 +1,27 @@
+#This is a workflow for hello, my name
+
+name: hello
+
+#run on a trigger
+
+on:
+
+push:
+
+branches: main
+
+jobs:
+
+greet:
+
+runs on: ubuntu-latest
+
+step:
+
+-name: say Hello brother
+
+run: echo "hello brother"
+
+-name: ask How are you
+
+run: echo"how are you"
